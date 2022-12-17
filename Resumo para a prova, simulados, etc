@@ -1,0 +1,888 @@
+1. Um desenvolvedor tem como missão desenvolver um componente React capaz de exibir dados de um cosmético. Cosméticos possuem
+
+
+um título
+
+duas linhas para descrição
+
+um rodapé
+
+"Batom
+Batom Vermelho
+Batons XYZ Melhor marca"
+
+Analise as seguintes proposições.
+
+
+I. Embora possa ser aprimorado do ponto de vista de reusabilidade, o componente é válido.
+Ou seja, seu uso em uma aplicação não causa erros de compilação ou em tempo de execução.
+
+II. Caso utilize a notação apropriada para o contexto JSX, nada impede que o desenvolvedor especifique regras CSS ao longo da própria definição da função render.
+
+III. Utilizando a notação adequada, regras CSS podem também ser definidas fora da função render.
+
+
+Feedback
+
+I, II e III.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2.
+
+ O bloco de código a seguir é a tentativa de definição de um componente React utilizando JSX.
+ Faça uma análise linha a linha e indique qual(is) linha(s) apresenta(m) erro(s) de notação.
+ 
+ 
+4, apenas.
+
+
+4 e 10, apenas.
+
+
+4, 7 e 17, apenas.
+
+
+7, 15 e 17, apenas.
+
+
+4, 7, 10, 15 e 17, apenas.
+
+Feedback
+
+7, 15 e 17, apenas.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+3.
+
+É correto dizer que todas as regras CSS utilizadas pelo componente a seguir são do tipo “inline”.
+
+
+<div style={{margin: 'auto', width: 768, backgroundColor: '#EEE', padding:
+12, borderRadius: 8}}> ------- INLINE
+
+
+<label {{{{className="rotulo"}}}}} htmlFor="nome" style={{display: 'block',
+marginBottom: 4}}>Nome:</label> ----------------------- OUTLINE
+
+
+Escolha uma opção:
+Verdadeiro
+Falso 
+
+
+Feedback
+
+Verdadeiro
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+4.
+
+Quando fazemos a definição de um componente React, desejamos que ele possua características como alto nível de reusabilidade e facilidade de manutenção.
+Um dos mecanismos relacionados à reusabilidade de um componente React geralmente leva o nome de “props”. A seu respeito, considere as seguintes proposições.
+
+
+
+I. Componentes React definidos por meio de classes recebem seu objeto props como um parâmetro do método render.
+
+II. Há componentes React que acessam valores associados a chave(s) disponível(is) em seu objeto props que sequer foram especificadas explicitamente em seu contexto de uso.
+
+III. Embora funções sejam cidadãs de primeira classe em Javascript, elas não podem ser passadas de componente a componente por meio do props.
+
+
+
+É correto apenas o que se afirma em
+
+
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+
+Feedback
+
+II
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+5.
+
+Observe o componente React a seguir. 
+
+
+
+Analise as seguintes proposições.
+
+
+
+I. É correto dizer que todas as classes CSS utilizadas pelo componente lhe foram entregues por meio de seu objeto props.
+
+
+
+II. O componente que o utiliza deve especificar valores associados às chaves cabecalho e children explicitamente, caso contrário, um erro de compilação acontece.
+
+
+
+
+III. Se o componente for utilizado da seguinte forma, a div que contém a palavra teste será exibida,
+ainda que o contexto de uso não tenha especificado explicitamente valores quaisquer a serem associados às chaves de seu props.
+
+
+
+É correto apenas o que se afirma em
+
+
+
+
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+
+Feedback
+III.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+6.
+
+Sabemos que componentes React podem ser definidos por meio de classes e também por meio de funções. 
+Dado esse fato, podemos dizer que todos os componentes React devem produzir a sua interface gráfica utilizando a função render.
+
+Escolha uma opção:
+Verdadeiro 
+Falso
+
+Feedback
+
+Falso
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+7.
+
+Analise as seguintes proposições.
+
+
+
+I. A cada clique, a aplicação incrementa o valor armazenado na variável contador e atualiza a tela automaticamente.
+
+II. A linha 9 substitui o estado original por outro que contém apenas a chave “contador”. 
+Isso quer dizer que, depois do primeiro clique, a variável “nome” passa a valer “undefined” e o nome “João” não é exibido na tela.
+
+
+III. A linha 16 pode ser reescrita  da seguinte forma, sem que isso altere o funcionamento do componente:
+
+
+
+É correto apenas o que se afirma em
+
+
+I
+
+
+II
+
+
+III
+
+
+I e III
+
+
+I, II e III
+
+Feedback
+
+I.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+8.
+
+Analise as seguintes proposições a respeito do ciclo de vida de um componente React definido por meio de uma classe.
+
+
+
+I. Seu construtor é chamado sempre que seu estado é atualizado.
+
+II. Seu método render é chamado sempre que seu estado é atualizado.
+
+III. Os métodos componentDidMount e componentWillUnmount executam uma única vez cada para cada componente instanciado.
+
+É correto apenas o que se afirma em
+
+
+
+
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e III
+
+
+II e III
+
+Feedback
+
+II e III.
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+9.
+
+ Considere o seguinte componente React.
+
+
+
+
+É correto dizer que, para que seu estado seja inicializado corretamente, as linhas 5 e 7  são necessárias.
+
+
+
+Escolha uma opção:
+Verdadeiro
+Falso 
+
+Feedback
+ 'Falso'.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+10.
+
+Considere as definições dos seguintes componentes React. Suponha que Q10_estado1 é montado corretamente na árvore DOM.
+
+
+
+
+
+
+
+
+
+Analise as seguintes proposições.
+
+I. A tela é atualizada automaticamente a cada segundo.
+
+II. A tela é atualizada a cada clique.
+
+III. A chamada à função que atualiza o estado do componente Q10_estado1 ocorre no componente Q10_estado2.
+
+
+
+
+É correto apenas o que se afirma em
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+II e III.
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+1.
+
+ O uso do mecanismo “dotenv” traz, pelo menos, duas vantagens:
+
+
+- alteração de valores em função do ambiente (desenvolvimento, produção etc)
+
+- isolamento de valores do sistema de controle de versão
+
+
+
+O pacote react-dotenv, usado em aula, viabiliza o uso do mecanismo citado em aplicações React. Sabe-se que aplicações React executam puramente do lado do cliente. Diante de tais fatos, analise as seguintes proposições:
+
+
+I. Se uma aplicação Front End usa uma senha para acesso a uma funcionalidade de um Back End,
+o pacote react-dotenv é capaz de viabilizar seu uso sem que ela tenha de ser baixada pelo navegador do usuário final.
+
+
+II. A chave “whitelist” do pacote react-dotenv deve ter a ela associada uma lista contendo os nomes das chaves que existem apenas no Back End.
+
+
+III. O pacote react-dotenv é capaz de criar um arquivo contendo os pares chave/valor especificados em um arquivo chamado .env.
+O arquivo criado faz parte do pacote final, ou seja, aquele que será implantado e ficará disponível diretamente para o usuário final (na máquina dele).
+
+
+É correto apenas o que se afirma em
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+III.
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2.
+
+Analise as seguintes proposições. 
+I. No ciclo Redux, criadoras de ação são responsáveis por fazer "dispatch".
+II. No ciclo Redux, todas as ações devem ter uma propriedade chamada type.
+III. No ciclo Redux, todaas as ações devem ter uma propriedade chamada payload. 
+
+É correto apenas o que se afirma em
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+II.
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+3.
+
+Analise as seguintes proposições.
+I. No ciclo Redux, dispatch é o ato de criar uma ação.
+II. No ciclo Redux, as criadoras de ação e os reducers devolvem um objeto JSON que representa o estado centralizado.
+III. No ciclo Redux, um reducer deve produzir algo diferente de undefined a fim de não eliminar dados existentes na fatia de estado que manipula.
+
+É correto apenas o que se afirma em
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+III.
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+4.
+
+Analise a figura e as proposições a seguir.
+I. Sempre que chamada, a função opera sobre uma lista vazia.
+II. Há casos em que ela é executada e a fatia do estado sobre a qual ela opera permanece inalterada.
+III. Ela recebe uma fatia de estado e uma ação. 
+
+
+
+
+
+
+
+
+É correto apenas o que se afirma em
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+II e III.
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+5.
+
+Considere a figura e as proposições a seguir. 
+I. Trata-se de um componente React controlado. 
+II. A sua definição de estado pode também ser feita utilizando-se o hook useState.
+III. A sua definição de estado pode também ser feita utilizando-se o hook useEffect.
+
+
+
+
+É correto apenas o que se afirma em
+
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+I.
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+6.
+
+A figura a seguir representa um fluxo de interação com o usuário implementado por um componente React.
+Ele possui um campo textual (input) em que o usuário digita um valor de interesse.
+A função associada ao evento onChange entra em funcionamento sempre que o valor do campo textual é atualizado.
+
+
+
+
+
+Analise as seguintes proposições.
+
+
+
+
+I. A figura permite concluir que o componente é controlado, desde que ele não possua outros elementos de entrada de dados.
+II. A figura permite concluir que o componente é funcional. 
+III. A figura permite concluir que o componente define seu estado utilizando o hook useState.
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+I.
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+7.
+
+ Desde a versão 16.8, o React disponibiliza um mecanismo conhecido como “hooks”. Um dos principais está associado à criação de estado.
+ 
+ Analise as seguintes proposições. 
+ 
+ I. Os hooks useState e useEffect são ambos utilizados na criação de variáveis de estado. 
+ II. A coleção devolvida pelo hook useState inclui uma função.
+ III. Todos os componentes React podem fazer uso do mecanismo baseado em hooks.
+ 
+ É correto apenas o que se afirma em
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+II.
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+8.
+
+Analise as seguintes proposições a respeito dos hooks React.
+
+
+I. Todo componente que usa o hook useEffect também usa o hook useState.
+
+II. Nem todo componente que usa o hook useState também usa o hook useEffect.
+
+III. O uso de hooks em um projeto React baseia-se na estratégia “tudo ou nada”: 
+a sua adoção requer que todos os componentes já existentes no projeto sejam adaptados a fim de que seu funcionamento seja baseado em hooks.
+
+
+É correto apenas o que se afirma em
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+II.
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+9.
+
+Quanto ao funcionamento do hook useEffect, analise as seguintes proposições. 
+Lembre-se que o seu primeiro parâmetro é uma função que representa um efeito colateral (daí o nome “effect”, de side effect) 
+a ser causado assim que a renderização do componente termina.
+
+I. Se a função que representa o efeito colateral a ser causado opera utilizando promises, ela pode ser marcada como async e, portanto, fazer uso da construção await. 
+II. A função que representa o efeito colateral a ser causado nem sempre é executada após uma renderização do componente.
+III. Há casos em que o hook useEffect deve ser chamado fora do escopo da função que define o componente.
+
+É correto apenas o que se afirma em
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+II.
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+10.
+
+Analise as seguintes proposições a respeito de aplicações React Native. I. Todas as regras de estilos utilizadas por elas devem ser definidas em arquivos de extensão .css, tal qual fazemos com aplicações React comuns. II. Seus componentes funcionais também podem usar os hooks do React. III. O componente FlatList pode ser usado para fazer a exibição de itens existentes em uma lista armazenada no estado de um componente funcional. É correto apenas o que se afirma em
+
+
+
+
+I
+
+
+II
+
+
+III
+
+
+I e II
+
+
+II e III
+
+Feedback
+
+II e III.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
